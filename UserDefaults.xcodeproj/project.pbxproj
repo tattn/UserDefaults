@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247A9C821ED9C4E800D929FF /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247A9C811ED9C4E800D929FF /* Utility.swift */; };
 		24C44FFB1ED75681009B6B8C /* UserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C44FF91ED75681009B6B8C /* UserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24C450021ED75693009B6B8C /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C450011ED75693009B6B8C /* UserDefaults+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		247A9C811ED9C4E800D929FF /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		24C44FF61ED75681009B6B8C /* UserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C44FF91ED75681009B6B8C /* UserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaults.h; sourceTree = "<group>"; };
 		24C44FFA1ED75681009B6B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				24C450011ED75693009B6B8C /* UserDefaults+.swift */,
+				247A9C811ED9C4E800D929FF /* Utility.swift */,
 				24C44FF91ED75681009B6B8C /* UserDefaults.h */,
 				24C44FFA1ED75681009B6B8C /* Info.plist */,
 			);
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C450021ED75693009B6B8C /* UserDefaults+.swift in Sources */,
+				247A9C821ED9C4E800D929FF /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +307,7 @@
 				24C450001ED75681009B6B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
