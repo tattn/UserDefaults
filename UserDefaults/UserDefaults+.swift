@@ -27,7 +27,12 @@ public extension UserDefaults {
 // MARK:- getter
 
 public extension UserDefaults {
-    public func object<T>(_ type: T, for key: Key) -> T? {
+    public func get<T: Codable>(_ type: T.Type = T.self, for key: Key) -> T? {
+        guard let data = data(for: key) else { return nil }
+        return try? JSONDecoder().decode(T.self, from: data)
+    }
+
+    public func object<T>(_ type: T.Type = T.self, for key: Key) -> T? {
         return object(forKey: key.rawValue) as? T
     }
     
@@ -79,6 +84,11 @@ public extension UserDefaults {
 // MARK:- setter
 
 public extension UserDefaults {
+    public func set<T: Codable>(_ value: T, for key: Key) {
+        guard let data = try? JSONEncoder().encode(value) else { return }
+        set(data, forKey: key.rawValue)
+    }
+
     public func set(_ value: Any?, for key: Key) {
         set(value, forKey: key.rawValue)
     }
